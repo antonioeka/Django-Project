@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block tableUserManagement %}
+
+<br><br><br><br><br><br>
+<div class="container">
+<h1 align="center">User Management</h1>
+<a href="tambah_user.html" class="btn btn-primary mb-3">Tambah User</a>
+{% for message in messages %}
+    {% if message %}
+        <div class="alert alert-success">{{ message }}</div>
+    {% endif %}
+{% endfor %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Status</th>
+            <th>Aksi</th>
+        </tr>
+    </thead>
+{% for User_Management in user_managements %}
+    <tbody>
+    <tr>
+        <td>{{ User_Management.username }}</td>
+        <td>{{ User_Management.nama }}</td>
+        <td>{{ User_Management.email }}</td>
+        <td>{{ User_Management.password }}</td>
+        <td font-color="white">
+            <span class="badge bg-warning">{{ User_Management.status.nama }}</span>
+        </td>
+        <td>
+            <a href="{% url 'update_user' User_Management.id %}" style="color: grey;"><i class="fa fa-pencil fa-lg mr-2"></i></a>
+            <button type="button" class="btn" data-bs-toggle="modal"
+                    data-bs-target="#hapus-{{User_Management.id}}"><i class="fa fa-trash fa-lg mr-2" style="color: grey;"></i></button>
+            </td>
+            <div class="modal fade" id="hapus-{{User_Management.id}}" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="color: black;">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Hapus Data User</h1>
+                            <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">x</button>
+                        </div>
+                        <div class="modal-body">
+                            Username : {{ User_Management.username}}<br>
+                            Nama : {{ User_Management.nama}}
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                            <a href="{% url 'hapus_user' User_Management.id%}" class="btn btn-success">Yakin</a>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+    </tr>
+    </tbody>
+{% endfor %}
+</table>
+</div>
+<br>
+
+{% endblock %}

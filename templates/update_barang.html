@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block UpdateBarang %}
+
+<section id="form">
+    <br><br><br><br><br><br>
+    <div class="row ml-auto">
+        <div class="col-md-2">
+            {% for message in messages %}
+                {% if message %}
+                <div class="alert alert-success">{{ message }}</div>
+                {% endif %}
+            {% endfor %}
+            <h3> Ubah : {{ barangs.kodebrg }}</h3>
+            <form action="{% url 'update_barang' barangs.id %}" method="post">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button type="submit" class="btn btn-primary">Update</button>
+                <a href="/tampil_brg.html" class="btn btn-danger">Kembali</a>
+            </form>
+        </div>
+    </div>
+    <br>
+</section>
+
+{% endblock %}

@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contact %}
+
+        <!--================Home Banner Area =================-->
+        <section class="banner_area">
+            <div class="box_1620">
+                <div class="banner_inner d-flex align-items-center">
+                    <div class="container">
+                        <div class="banner_content text-center">
+                            <br><br><br><br><br>
+                            <h2>Contact Me</h2>
+                            <div class="page_link">
+                                <a href="index.html">Home</a>
+                                <a href="contact.html">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Contact Area =================-->
+        <section class="contact_area p_120">
+        <section class="section border-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 mb-5 order-2">
+                <form action="#" method="post">
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" class="form-control ">
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <label for="phone">Phone</label>
+                      <input type="text" id="phone" class="form-control ">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 form-group">     
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" class="form-control ">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <label for="message">Write Message</label>
+                      <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input type="submit" value="Send Message" class="btn btn-primary px-3 py-3">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-6 order-2 mb-5">
+                <div class="row justify-content-right">
+                  <div class="col-md-8 mx-auto contact-form-contact-info">
+                    <p class="d-flex">
+                      <span class="lnr lnr-map-marker"></span>
+                      <span>Jl. Bandulan 8A no 503, Sukun, Kota Malang</span>
+                    </p>
+                    <p class="d-flex">
+                      <span class="lnr lnr-phone-handset"></span>
+                      <span>0878-6614-4335</span>
+                    </p>
+                    <p class="d-flex">
+                      <span class="lnr lnr-envelope"></span>
+                      <span>antonioeka30@gmail.com</span>
+                    </p>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+            </div>
+        </section>
+        <!--================Contact Area =================-->
+        
+       {% endblock %}

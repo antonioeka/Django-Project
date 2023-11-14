@@ -1,0 +1,320 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block home %}
+        
+        <!--================Home Banner Area =================-->
+        <section class="home_banner_area">
+           	<div class="container box_1620">
+           		<div class="banner_inner d-flex align-items-center">
+					<div class="banner_content">
+						<div class="media">
+							<div class="d-flex">
+								<img src="{% static 'img/anton.jpg' %}" alt="" width="450" height="680">
+							</div>
+							<div class="media-body">
+								<div class="personal_text">
+									<h6>Hello Everybody, i am</h6>
+									<h3>Antonio Eka Wadu Djawa</h3>
+									<h4>College Student</h4>
+									<p>Trust to the God with your heart, don't rely on your own understanding.</p>
+									<ul class="list basic_info">
+										<li><a href="#"><i class="lnr lnr-calendar-full"></i> 20th July, 2003</a></li>
+										<li><a href="#"><i class="lnr lnr-phone-handset"></i> 0878 6614 4335</a></li>
+										<li><a href="#"><i class="lnr lnr-envelope"></i> antonioeka30@gmail.com</a></li>
+										<li><a href="#"><i class="lnr lnr-home"></i> Bandulan Street 8A 503 </a></li>
+									</ul>
+									<ul class="list personal_social">
+										<li><a href="https://www.facebook.com/opik.bayu"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="https://www.instagram.com/antonio.ekaa/"><i class="fa fa-instagram"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Welcome Area =================-->
+        <section class="welcome_area p_120">
+        	<div class="container">
+        		<div class="row welcome_inner">
+        			<div class="col-lg-6">
+        				<div class="welcome_text">
+        					<h4>About Myself</h4>
+        					<p>I am Antonio Eka Wadu Djawa. I was Born at 20 July 2003 in Malang and my address at Street Bandulan 8A 503 Sukun, Malang. Now I am College Student of Institut Asia Malang, Informatics.</p>
+        					<a class="btn btn-primary" href="{% static 'CV_Eka.pdf' %}" download><i class="fa fa-download"></i> My CV</a>
+        				</div>
+        			</div>
+        			<div class="col-lg-6">
+        				<div class="tools_expert">
+        					<div class="skill_main">
+								<div class="skill_item">
+									<h4>After Effects <span class="counter">85</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>Photoshop <span class="counter">90</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>Illustrator <span class="counter">90</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>Web Design <span class="counter">80</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>Network Engineer <span class="counter">85</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Welcome Area =================-->
+        
+        <!--================My Tabs Area =================-->
+        <section class="mytabs_area p_120">
+        	<div class="container">
+        		<div class="tabs_inner">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">My Experiences</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">My Education</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+							<ul class="list">
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>Aug 2020 - Oct 2020</p>
+										</div>
+										<div class="media-body">
+											<h4>PT Jati Magetan Televisi JTV Madiun</h4>
+											<p>Intership <br />Work from home, Malang</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>Apr 2021 - May 2021</p>
+										</div>
+										<div class="media-body">
+											<h4>PT Semeru Agung Mandiri</h4>
+											<p>Network Technician <br />Malang, East Java</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+							<ul class="list">
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>July 2015 to June 2018</p>
+										</div>
+										<div class="media-body">
+											<h4>Mardi Wiyata Junior High School </h4>
+											<p>Student <br />Malang, East Java</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>July 2018 to June 2021</p>
+										</div>
+										<div class="media-body">
+											<h4>Telkom Vocational High School</h4>
+											<p>Student <br />Malang, East Java</p>
+										</div>
+									</div>
+								</li>
+								<li>
+								<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>July 2021 to June 2024 </p>
+										</div>
+										<div class="media-body">
+											<h4> Technology and Business of Asia Institute</h4>
+											<p> College Student <br />Malang, East Java</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End My Tabs Area =================-->
+        
+        <!--================Home Gallery Area =================-->
+        <section class="home_gallery_area p_120">
+        	<div class="container">
+        		<div class="main_title">
+        			<h2>My Latest Featured Projects</h2>
+        			<p>Check some of my design.</p>
+        		</div>
+        		<div class="isotope_fillter">
+        			<ul class="gallery_filter list">
+						<li class="active" data-filter="*"><a href="#">All</a></li>
+						<li data-filter=".brand"><a href="#">Illustration</a></li>
+						<li data-filter=".manipul"><a href="#">Mockup</a></li>
+						<li data-filter=".creative"><a href="#">UI/UX</a></li>
+						<li data-filter=".design"><a href="#">Logo</a></li>
+					</ul>
+        		</div>
+        	</div>
+        	<div class="container">
+        		<div class="gallery_f_inner row imageGallery1">
+        			<div class="col-lg-4 col-md-4 col-sm-6 design">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="{% static 'img/gallery/logo-01.png' %}" alt="" width="338">
+        						<a class="light" href="{% static 'img/gallery/logo-01.png' %}"><img src="{% static 'img/gallery/icon.png' %}" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Healthy Juice Logo</h4>
+        						<p>TIP Project</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 manipul">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="{% static 'img/gallery/MockUpPKWU.png'%}" alt="">
+        						<a class="light" href="{% static 'img/gallery/MockUpPKWU.png' %}"><img src="{% static 'img/gallery/icon.png' %}" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Pizza Box MockUp</h4>
+        						<p>Entrepreneur Project</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 brand">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="{% static 'img/gallery/illustration-01.png' %}" alt="" width="338">
+        						<a class="light" href="{% static 'img/gallery/illustration-01.jpg' %}"><img src="{% static 'img/gallery/icon.png' %}" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Eye Painting Illustration</h4>
+        						<p>Self Project</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 creative">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="{% static 'img/gallery/uiux-01.png' %}" alt="" width="338">
+        						<a class="light" href="{% static 'img/gallery/uiux-01.png' %}"><img src="{% static 'img/gallery/icon.png' %}" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>UI/UX Web Obey The Rules</h4>
+        						<p>College Project</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 manipul">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="{% static 'img/gallery/mockupjus.jpg' %}" alt="" width="350">
+        						<a class="light" href="{% static 'img/gallery/mockupjus.jpg' %}"><img src="{% static 'img/gallery/icon.png' %}" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Healthy Juice MockUp</h4>
+        						<p>College Project</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 design">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="{% static 'img/gallery/logo2-01.png' %}" alt="" width="338">
+        						<a class="light" href="{% static 'img/gallery/logo2-01.png' %}"><img src="{% static 'img/gallery/icon.png' %}" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Family Gathering Logo</h4>
+        						<p>Organization Project</p>
+        					</div>
+        				</div>
+        			</div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 brand">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <img class="img-fluid" src="{% static 'img/gallery/lego.png' %}" alt="" width="338">
+                                <a class="light" href="{% static 'img/gallery/lego.png' %}"><img src="{% static 'img/gallery/icon.png' %}" alt=""></a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Lego Painting Illustration</h4>
+                                <p>Self Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 design">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <img class="img-fluid" src="{% static 'img/gallery/logo3.jpg' %}" alt="" width="338">
+                                <a class="light" href="{% static 'img/gallery/logo3.jpg' %}"><img src="{% static 'img/gallery/icon.png' %}" alt=""></a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Asia Sing Competition Logo</h4>
+                                <p>TIP Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 brand">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <img class="img-fluid" src="{% static 'img/gallery/mouth.png' %}" alt="" width="338">
+                                <a class="light" href="{% static 'img/gallery/mouth.png' %}"><img src="{% static 'img/gallery/icon.png' %}" alt=""></a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Mouth Painting Illustration</h4>
+                                <p>Self Project</p>
+                            </div>
+                        </div>
+                    </div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Home Gallery Area =================-->
+        
+       {% endblock %}
